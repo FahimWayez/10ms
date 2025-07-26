@@ -4,6 +4,29 @@ const BASE = "https://api.10minuteschool.com/discovery-service/api/v1";
 
 export type TENMSLang = "en" | "bn";
 
+export interface TENMSSectionValue {
+  id?: string;
+  title?: string;
+  description?: string;
+  icon?: string;
+  color?: string;
+  text?: string;
+  subtitle?: string;
+  image?: string;
+  has_instructor_page?: boolean;
+  short_description?: string;
+  slug?: string;
+  [key: string]: string | number | boolean | null | undefined;
+}
+
+export interface TENMSSection {
+  type: string;
+  name: string;
+  description: string;
+  order_idx: number;
+  values: TENMSSectionValue[];
+}
+
 export interface TENMSProduct {
   code: number;
   data: {
@@ -36,13 +59,7 @@ export interface TENMSProduct {
       }>;
       schema?: Array<{ meta_name: string; meta_value: string; type: string }>;
     };
-    sections?: Array<{
-      type: string;
-      name: string;
-      description: string;
-      order_idx: number;
-      values: any[];
-    }>;
+    sections?: TENMSSection[];
   };
   message: string;
   status_code: number;
