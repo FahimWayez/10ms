@@ -32,7 +32,7 @@ const en = {
     whatsapp: "Whatsapp",
     outsideBD: "Outside Bangladesh",
     emailUs: "Email Us",
-    copyright: "Copyright © 10 Minute School. All rights reserved.",
+    copyright: "2015 - 2025 Copyright © 10 Minute School. All rights reserved.",
   },
 };
 
@@ -68,7 +68,8 @@ const bn = {
     whatsapp: "হোয়াটসঅ্যাপ",
     outsideBD: "দেশের বাহির থেকে",
     emailUs: "ইমেইল",
-    copyright: "টেন মিনিট স্কুল কর্তৃক সর্বস্বত্ব সংরক্ষিত",
+    copyright:
+      "স্বত্ব © ২০১৫ - ২০২৫ টেন মিনিট স্কুল কর্তৃক সর্বস্বত্ব সংরক্ষিত",
   },
 };
 
