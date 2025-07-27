@@ -67,3 +67,177 @@ export const PhoneIcon = () => (
     />
   </svg>
 );
+
+export const Hamburger = () => (
+  <svg
+    stroke="currentColor"
+    fill="currentColor"
+    strokeWidth="0"
+    viewBox="0 0 24 24"
+    height="20"
+    width="20"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path d="M21 17.9995V19.9995H3V17.9995H21ZM6.59619 3.90332L8.01041 5.31753L4.82843 8.49951L8.01041 11.6815L6.59619 13.0957L2 8.49951L6.59619 3.90332ZM21 10.9995V12.9995H12V10.9995H21ZM21 3.99951V5.99951H12V3.99951H21Z"></path>
+  </svg>
+);
+
+export const NextIcon = () => (
+  <svg
+    fill="#808385"
+    height="12px"
+    width="12px"
+    version="1.1"
+    id="XMLID_287_"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="-1.8 -1.8 8.1 8.1"
+  >
+    <g id="SVGRepo_bgCarrier" strokeWidth="0">
+      <path
+        x="-9.6"
+        y="-9.6"
+        width="43.20"
+        height="43.20"
+        rx="21.6"
+        fill="#ffffff"
+        strokeWidth="0"
+        d="M2.25 -1.8H2.25A4.05 4.05 0 0 1 6.3 2.25V2.25A4.05 4.05 0 0 1 2.25 6.3H2.25A4.05 4.05 0 0 1 -1.8 2.25V2.25A4.05 4.05 0 0 1 2.25 -1.8z"
+      />
+    </g>
+    <g
+      id="SVGRepo_tracerCarrier"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <g id="SVGRepo_iconCarrier">
+      <g id="next">
+        <g>
+          <path
+            points="6.8,23.7 5.4,22.3 15.7,12 5.4,1.7 6.8,0.3 18.5,12 "
+            d="M1.275 4.444L1.013 4.181L2.944 2.25L1.013 0.319L1.275 0.056L3.469 2.25Z"
+          />
+        </g>
+      </g>
+    </g>
+  </svg>
+);
+
+export const PreviousIcon = () => (
+  <svg
+    fill="#808385"
+    height="12px"
+    width="12px"
+    version="1.1"
+    id="XMLID_54_"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="-1.8 -1.8 8.1 8.1"
+  >
+    <g id="SVGRepo_bgCarrier" strokeWidth="0">
+      <path
+        x="-9.6"
+        y="-9.6"
+        width="43.20"
+        height="43.20"
+        rx="21.6"
+        fill="#ffffff"
+        strokeWidth="0"
+        d="M2.25 -1.8H2.25A4.05 4.05 0 0 1 6.3 2.25V2.25A4.05 4.05 0 0 1 2.25 6.3H2.25A4.05 4.05 0 0 1 -1.8 2.25V2.25A4.05 4.05 0 0 1 2.25 -1.8z"
+      />
+    </g>
+    <g
+      id="SVGRepo_tracerCarrier"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <g id="SVGRepo_iconCarrier">
+      <g id="previous">
+        <g>
+          <path
+            points="17.2,23.7 5.4,12 17.2,0.3 18.5,1.7 8.4,12 18.5,22.3 "
+            d="M3.225 4.444L1.013 2.25L3.225 0.056L3.469 0.319L1.575 2.25L3.469 4.181Z"
+          />
+        </g>
+      </g>
+    </g>
+  </svg>
+);
+
+export const BigNextIcon = () => (
+  <svg
+    fill="#808385"
+    height="20px"
+    width="20px"
+    version="1.1"
+    id="XMLID_287_"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="-3 -3 13.5 13.5"
+  >
+    <g id="SVGRepo_bgCarrier" strokeWidth="0">
+      <path
+        x="-9.6"
+        y="-9.6"
+        width="43.20"
+        height="43.20"
+        rx="21.6"
+        fill="#ffffff"
+        strokeWidth="0"
+        d="M3.75 -3a6.75 6.75 0 0 1 6.75 6.75 6.75 6.75 0 0 1 -6.75 6.75 6.75 6.75 0 0 1 -6.75 -6.75 6.75 6.75 0 0 1 6.75 -6.75"
+      />
+    </g>
+    <g
+      id="SVGRepo_tracerCarrier"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <g id="SVGRepo_iconCarrier">
+      <g id="next">
+        <g>
+          <path
+            points="6.8,23.7 5.4,22.3 15.7,12 5.4,1.7 6.8,0.3 18.5,12 "
+            d="m2.125 7.407 -0.437 -0.438L4.907 3.75 1.688 0.532 2.125 0.093 5.782 3.75Z"
+          />
+        </g>
+      </g>
+    </g>
+  </svg>
+);
+
+export const BigPreviousIcon = () => (
+  <svg
+    fill="#808385"
+    height="20px"
+    width="20px"
+    version="1.1"
+    id="XMLID_54_"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="-3 -3 13.5 13.5"
+  >
+    <g id="SVGRepo_bgCarrier" strokeWidth="0">
+      <path
+        x="-9.6"
+        y="-9.6"
+        width="43.20"
+        height="43.20"
+        rx="21.6"
+        fill="#ffffff"
+        strokeWidth="0"
+        d="M3.75 -3A6.75 6.75 0 0 1 10.5 3.75 6.75 6.75 0 0 1 3.75 10.5 6.75 6.75 0 0 1 -3 3.75 6.75 6.75 0 0 1 3.75 -3"
+      />
+    </g>
+    <g
+      id="SVGRepo_tracerCarrier"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <g id="SVGRepo_iconCarrier">
+      <g id="previous">
+        <g>
+          <path
+            points="17.2,23.7 5.4,12 17.2,0.3 18.5,1.7 8.4,12 18.5,22.3 "
+            d="M5.375 7.407 1.688 3.75 5.375 0.093l0.407 0.438L2.625 3.75l3.157 3.218Z"
+          />
+        </g>
+      </g>
+    </g>
+  </svg>
+);
