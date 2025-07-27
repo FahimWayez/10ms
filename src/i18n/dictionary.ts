@@ -34,6 +34,19 @@ const en = {
     emailUs: "Email Us",
     copyright: "2015 - 2025 Copyright © 10 Minute School. All rights reserved.",
   },
+  tabs: {
+    instructor: "Course instructor",
+    layout: "How the course is laid out",
+    learn: "What you will learn by doing the course",
+  },
+  cta: {
+    enroll: "Enroll",
+  },
+  meta: {
+    includes: "এই কোর্সে যা থাকবে",
+    help: "কোর্সটি সম্পর্কে বিস্তারিত জানতে",
+    call: "ফোন করুন (16910)",
+  },
 };
 
 const bn = {
@@ -70,6 +83,19 @@ const bn = {
     emailUs: "ইমেইল",
     copyright:
       "স্বত্ব © ২০১৫ - ২০২৫ টেন মিনিট স্কুল কর্তৃক সর্বস্বত্ব সংরক্ষিত",
+  },
+  tabs: {
+    instructor: "কোর্স ইন্সট্রাক্টর",
+    layout: "কোর্সটি যেভাবে সাজানো হয়েছে",
+    learn: "কোর্সটি করে যা শিখবেন",
+  },
+  cta: {
+    enroll: "কোর্সটি কিনুন",
+  },
+  meta: {
+    includes: "এই কোর্সে যা থাকবে",
+    help: "কোর্সটি সম্পর্কে বিস্তারিত জানতে",
+    call: "ফোন করুন (16910)",
   },
 };
 

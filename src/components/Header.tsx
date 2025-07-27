@@ -3,7 +3,12 @@ import Link from "next/link";
 import { cookies } from "next/headers";
 import { getDictionary, type Lang } from "@/i18n/dictionary";
 import LangSwitch from "./LangSwitch";
-import { DownArrow, PhoneIcon, SearchIcon } from "../../public/svg/commonIcons";
+import {
+  DownArrow,
+  Hamburger,
+  PhoneIcon,
+  SearchIcon,
+} from "../../public/svg/commonIcons";
 
 export default async function Header() {
   const langCookie = (await cookies()).get("TENMS_LANG")?.value as
@@ -13,24 +18,12 @@ export default async function Header() {
   const t = getDictionary(lang);
 
   return (
-    <header className="sticky top-0 left-0 z-50 w-full border-b border-gray-100 bg-white backdrop-blur px-10 lg:px-24 py-2">
+    <header className="sticky top-0 left-0 z-50 w-full border-b border-gray-100 bg-white backdrop-blur px-2 md:px-24 py-2">
       <div className="container-fluid">
         <div className="flex flex-col gap-2">
           <div className="flex items-center justify-between py-3 md:hidden">
             <button type="button" className="p-2">
-              <svg
-                className="h-6 w-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              </svg>
+              <Hamburger />
             </button>
 
             <Link href="/" className="shrink-0">
