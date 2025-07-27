@@ -1,6 +1,6 @@
 import type { TENMSProduct } from "@/lib/tenms";
 import Image from "next/image";
-import { BigNextIcon, NextIcon } from "../../../public/svg/commonIcons";
+import { BigNextIcon } from "../../../public/svg/commonIcons";
 
 export default async function InstructorSection({
   data,

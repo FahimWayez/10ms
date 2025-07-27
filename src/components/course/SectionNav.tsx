@@ -1,12 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import {
-  BigNextIcon,
-  BigPreviousIcon,
-  NextIcon,
-  PreviousIcon,
-} from "../../../public/svg/commonIcons";
+import { BigNextIcon, BigPreviousIcon } from "../../../public/svg/commonIcons";
 import Link from "next/link";
 
 export type SectionNavItem = { href: string; label: string };

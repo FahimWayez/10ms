@@ -1,4 +1,4 @@
-import { getDictionary, type Lang } from "@/i18n/dictionary";
+import { type Lang } from "@/i18n/dictionary";
 import type { TENMSProduct } from "@/lib/tenms";
 import { StarIcon } from "../../../public/svg/sectionIcons";
 import RightRail from "./RightRail";
@@ -10,8 +10,6 @@ export default async function Hero({
   data: TENMSProduct["data"];
   lang: Lang;
 }) {
-  const t = getDictionary(lang);
-
   return (
     <section className="w-full bg-gradient-to-b from-[#00001E] via-[#020024] to-[#001F55] py-4 md:py-16 md:pb-20 md:px-42">
       <div className="px-4">
