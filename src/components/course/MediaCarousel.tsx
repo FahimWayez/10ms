@@ -59,7 +59,7 @@ export default function MediaCarousel({
 
   return (
     <div className={className}>
-      <div className="relative aspect-video w-full overflow-hidden rounded-md bg-gray-100">
+      <div className="relative aspect-video w-full overflow-hidden bg-gray-100">
         {current.resource_type === "video" ? (
           <iframe
             key={`v-${current.resource_value}`}
