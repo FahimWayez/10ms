@@ -8,6 +8,7 @@ import SectionNav, {
   type SectionNavItem,
 } from "@/components/course/SectionNav";
 import { getDictionary } from "@/i18n/dictionary";
+import FreePdfSection from "@/components/course/FreePdfSection";
 
 export default async function Page() {
   const cookieStore = await cookies();
@@ -67,6 +68,7 @@ export default async function Page() {
               )}
               <InstructorSection data={data} lang={lang} />
               <FeaturesSection data={data} lang={lang} />
+              <FreePdfSection data={data} lang={lang} />
             </div>
 
             <aside className="hidden md:block md:col-span-4 md:-mt-72">

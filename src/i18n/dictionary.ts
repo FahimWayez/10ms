@@ -47,6 +47,7 @@ const en = {
     help: "কোর্সটি সম্পর্কে বিস্তারিত জানতে",
     call: "ফোন করুন (16910)",
   },
+  pdf: { title: "Free PDF", button: "Download PDF" },
 };
 
 const bn = {
@@ -97,6 +98,7 @@ const bn = {
     help: "কোর্সটি সম্পর্কে বিস্তারিত জানতে",
     call: "ফোন করুন (16910)",
   },
+  pdf: { title: "Free PDF", button: "ফ্রি PDF Download করুন" },
 };
 
 export function getDictionary(lang: Lang) {
