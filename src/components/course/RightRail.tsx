@@ -92,9 +92,14 @@ export default async function RightRail({
 
   if (variant === "details") {
     return (
-      <div className="border border-gray-200 border-t-0 bg-white p-3 shadow-sm">
-        <Details />
-      </div>
+      <>
+        <div className="md:border md:border-gray-200 md:border-t-0 bg-white md:p-3 md:shadow-sm">
+          <Details />
+        </div>
+        <div className="md:block hidden">
+          <MetaHelp />
+        </div>
+      </>
     );
   }
 
@@ -102,11 +107,10 @@ export default async function RightRail({
     <div className="md:top-20">
       <div className="border border-gray-200 bg-white p-1 shadow-sm">
         <MediaCarousel media={media} preferredId={preferredId} />
-        <div className="md:sticky md:top-0 px-2">
+        <div className="md:sticky md:top-0 md:px-2">
           <Details />
         </div>
       </div>
-      <MetaHelp />
     </div>
   );
 }
