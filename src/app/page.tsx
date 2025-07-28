@@ -9,6 +9,11 @@ import SectionNav, {
 } from "@/components/course/SectionNav";
 import { getDictionary } from "@/i18n/dictionary";
 import FreePdfSection from "@/components/course/FreePdfSection";
+import PointersSection from "@/components/course/PointersSection";
+import AboutSection from "@/components/course/AboutSection";
+import ExclusiveFeaturesSection from "@/components/course/ExclusiveFeaturesSection";
+import TestimonialsSection from "@/components/course/TestimonialsSection";
+import FaqSection from "@/components/course/FaqSection";
 
 export default async function Page() {
   const cookieStore = await cookies();
@@ -35,44 +40,56 @@ export default async function Page() {
       href: "#learn",
       label: t?.tabs?.learn ?? "What you will learn by doing the course",
     },
-    // has("pointers") && {
-    //   href: "#learn2",
-    //   label: t?.tabs?.learn ?? "What you will learn by doing the course",
-    // },
-    // has("pointers") && {
-    //   href: "#learn3",
-    //   label: t?.tabs?.learn ?? "What you will learn by doing the course",
-    // },
-    // has("pointers") && {
-    //   href: "#learn4",
-    //   label: t?.tabs?.learn ?? "What you will learn by doing the course",
-    // },
+    has("about") && {
+      href: "#about",
+      label: t.tabs?.courseDetails ?? "Course details",
+    },
+    has("feature_explanations") && {
+      href: "#exclusive-features",
+      label: t.tabs?.exclusiveFeatures ?? "Exclusive Features",
+    },
+    has("testimonials") && {
+      href: "#testimonials",
+      label: t.tabs?.testimonials ?? "Students opinion",
+    },
+    has("faq") && {
+      href: "#faq",
+      label: t.tabs?.faq ?? "Frequently Ask Questions",
+    },
   ].filter(Boolean) as SectionNavItem[];
 
   return (
     <>
       <Hero data={data} lang={lang} />
 
-      <div className="px-10 lg:px-24 md:hidden">
+      <div className="px-4 lg:px-24 md:hidden">
         <RightRail data={data} lang={lang} variant="details" />
       </div>
 
       <section className="py-6">
-        <div className="lg:px-24">
+        <div className="md:px-42">
           <div className="grid grid-cols-1 gap-6 md:grid-cols-12">
             <div className="md:col-span-8 space-y-6">
               {items.length > 0 && (
-                <div className="hidden md:block">
+                <div className="hidden md:block md:sticky top-20 bg-white z-10">
                   <SectionNav items={items} />
                 </div>
               )}
               <InstructorSection data={data} lang={lang} />
               <FeaturesSection data={data} lang={lang} />
               <FreePdfSection data={data} lang={lang} />
+              <PointersSection data={data} lang={lang} />
+              <AboutSection data={data} lang={lang} />
+              <ExclusiveFeaturesSection data={data} lang={lang} />
+              <TestimonialsSection data={data} lang={lang} />
+              <FaqSection data={data} lang={lang} />
             </div>
 
             <aside className="hidden md:block md:col-span-4 md:-mt-72">
-              <RightRail data={data} lang={lang} variant="combined" />
+              <RightRail data={data} lang={lang} variant="media" />
+              <div className="md:sticky top-20">
+                <RightRail data={data} lang={lang} variant="details" />
+              </div>
             </aside>
           </div>
         </div>

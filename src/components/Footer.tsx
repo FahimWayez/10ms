@@ -44,7 +44,7 @@ export default async function Footer() {
             />
           </div>
           <p className="text-sm text-gray-600">{t.footer.downloadApp}</p>
-          <div className="flex gap-3">
+          <div className="flex gap-3 items-center md:justify-left justify-center">
             <Link href="#" aria-label="Get it on Google Play">
               <Image
                 src="/svg/gplay.svg"
