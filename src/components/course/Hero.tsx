@@ -18,9 +18,9 @@ export default async function Hero({
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
-      className="w-full  py-4 md:py-16 md:pb-20 md:px-42"
+      className="w-full py-4 md:py-16 md:pb-20 md:px-6"
     >
-      <div className="px-4">
+      <div className="container-fluid">
         <div className="md:hidden mb-4">
           <RightRail data={data} lang={lang} variant="media" />
         </div>

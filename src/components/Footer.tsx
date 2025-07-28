@@ -32,7 +32,7 @@ export default async function Footer() {
   const t = getDictionary(lang);
 
   return (
-    <footer className="mt-16 border-t border-gray-100 bg-white px-10 lg:px-24 py-2">
+    <footer className="mt-16 border-t border-gray-100 bg-white px-2 w-full py-2">
       <div className="container-fluid grid grid-cols-1 md:grid-cols-4 gap-10 py-10 text-center md:text-left">
         <div className="space-y-4 justify-center">
           <div className="flex justify-center md:justify-normal">
@@ -44,7 +44,7 @@ export default async function Footer() {
             />
           </div>
           <p className="text-sm text-gray-600">{t.footer.downloadApp}</p>
-          <div className="flex gap-3">
+          <div className="flex gap-3 items-center md:justify-left justify-center">
             <Link href="#" aria-label="Get it on Google Play">
               <Image
                 src="/svg/gplay.svg"

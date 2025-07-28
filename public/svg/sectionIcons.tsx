@@ -117,3 +117,29 @@ export const AccordionArrow: React.FC<AccordionArrowProps> = ({
     </svg>
   );
 };
+
+export const QuoteIcon = () => (
+  <svg
+    width="16px"
+    height="16px"
+    viewBox="0 0 6 6"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    stroke="#d33242"
+  >
+    <g id="SVGRepo_bgCarrier" strokeWidth="0" />
+    <g
+      id="SVGRepo_tracerCarrier"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <g id="SVGRepo_iconCarrier">
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M2.406 1.695a0.25 0.25 0 1 0 -0.311 -0.391C1.183 2.029 1 2.97 1 4a0.75 0.75 0 1 0 0.542 -0.721c0.086 -0.633 0.322 -1.153 0.863 -1.583ZM5 4a0.75 0.75 0 1 1 -1.5 0c0 -1.03 0.183 -1.971 1.094 -2.695a0.25 0.25 0 1 1 0.311 0.391c-0.542 0.43 -0.777 0.951 -0.862 1.583A0.75 0.75 0 0 1 5 4Z"
+        fill="#d33242"
+      />
+    </g>
+  </svg>
+);
