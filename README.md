@@ -1,5 +1,5 @@
 ## Hi there!
-````markdown
+```bash
 Next.js 15 frontend for the IELTS Course page at 10 Minute School. Uses SSR, Tailwind CSS and PNPM.
 
 
@@ -11,10 +11,9 @@ Next.js 15 frontend for the IELTS Course page at 10 Minute School. Uses SSR, T
 
 ## Setup
 
-```bash
 # install deps
 pnpm install
-````
+```
 
 ## Development
 
