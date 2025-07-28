@@ -62,12 +62,12 @@ export default async function Page() {
     <>
       <Hero data={data} lang={lang} />
 
-      <div className="px-4 lg:px-24 md:hidden">
+      <div className="container-fluid md:hidden">
         <RightRail data={data} lang={lang} variant="details" />
       </div>
 
       <section className="py-6">
-        <div className="md:px-42">
+        <div className="container-fluid">
           <div className="grid grid-cols-1 gap-6 md:grid-cols-12">
             <div className="md:col-span-8 space-y-6">
               {items.length > 0 && (

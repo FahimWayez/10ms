@@ -18,40 +18,43 @@ export default async function Header() {
   const t = getDictionary(lang);
 
   return (
-    <header className="sticky top-0 left-0 z-50 w-full border-b border-gray-100 bg-white backdrop-blur px-2 md:px-24 py-2">
+    <header className="sticky top-0 left-0 z-50 w-full border-b border-gray-100 bg-white backdrop-blur px-2  py-2">
       <div className="container-fluid">
         <div className="flex flex-col gap-2">
           <div className="flex items-center justify-between py-3 md:hidden">
-            <button type="button" className="p-2">
-              <Hamburger />
-            </button>
+            <div className="flex gap-4 items-center">
+              <button type="button" className="p-2">
+                <Hamburger />
+              </button>
 
-            <Link href="/" className="shrink-0">
-              <Image
-                src="/logo.png"
-                alt="10 Minute School"
-                width={100}
-                height={32}
-                priority
-              />
-            </Link>
+              <Link href="/" className="shrink-0">
+                <Image
+                  src="https://cdn.10minuteschool.com/images/svg/10mslogo-svg.svg"
+                  alt="10 Minute School"
+                  width={100}
+                  height={27}
+                  priority
+                />
+              </Link>
+            </div>
+            <div className="flex gap-4 items-center">
+              <button type="button" className="p-2">
+                <SearchIcon />
+              </button>
 
-            <button type="button" className="p-2">
-              <SearchIcon />
-            </button>
+              <Link href="tel:16910" className="p-2">
+                <PhoneIcon />
+              </Link>
 
-            <Link href="tel:16910" className="p-2">
-              <PhoneIcon />
-            </Link>
-
-            <Link
-              href="#"
-              className="rounded-md bg-[#1cab55] px-4 py-2 text-sm font-medium text-white"
-            >
-              {t.login}
-            </Link>
+              <Link
+                href="#"
+                className="rounded-md bg-[#1cab55] px-4 py-2 text-sm font-medium text-white"
+              >
+                {t.login}
+              </Link>
+            </div>
           </div>
-          <nav className="mx-8 ml-4 items-center gap-6 text-sm text-gray-700 flex md:hidden ">
+          <nav className="mx-8 ml-4 items-center gap-6 text-sm text-gray-700 flex md:hidden justify-center">
             {[t.class612, t.skills, t.admission, t.more].map((label) => (
               <Link
                 key={label}
@@ -67,10 +70,10 @@ export default async function Header() {
         <div className="hidden md:flex h-16 items-center gap-3">
           <Link href="/" className="shrink-0 flex items-center gap-2">
             <Image
-              src="/logo.png"
+              src="https://cdn.10minuteschool.com/images/svg/10mslogo-svg.svg"
               alt="10 Minute School"
-              width={140}
-              height={32}
+              width={100}
+              height={27}
               priority
             />
           </Link>
