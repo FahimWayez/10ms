@@ -1,4 +1,4 @@
-## Hi ther!
+## Hi there!
 ````markdown
 Next.js 15 frontend for the IELTS Course page at 10 Minute School. Uses SSR, Tailwind CSS and PNPM.
 
