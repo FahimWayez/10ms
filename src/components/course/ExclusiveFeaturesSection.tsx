@@ -1,4 +1,3 @@
-// src/components/course/ExclusiveFeaturesSection.tsx
 import type { TENMSProduct } from "@/lib/tenms";
 import { getDictionary, type Lang } from "@/i18n/dictionary";
 import { CheckIcon } from "../../../public/svg/sectionIcons";
@@ -6,10 +5,10 @@ import { CheckIcon } from "../../../public/svg/sectionIcons";
 type ExclusiveValue = {
   id: string;
   title?: string;
-  checklist?: string[]; // array of bullet points
+  checklist?: string[];
   file_type?: "image" | "video";
-  file_url?: string; // image or video url
-  video_thumbnail?: string; // optional thumbnail for video
+  file_url?: string;
+  video_thumbnail?: string;
 };
 
 export default async function ExclusiveFeaturesSection({
