@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+````markdown
+# IELTS Course Frontend
 
-## Getting Started
+Simple Next.js 15 frontend for the IELTS Course page at 10 Minute School. Uses SSR, Tailwind CSS and PNPM.
 
-First, run the development server:
+
+## Requirements
+
+- Node.js >= 18  
+- pnpm
+
+
+## Setup
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+# install deps
+pnpm install
+````
+
+## Development
+
+```bash
+# run dev server
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Production
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+# build optimized output
+pnpm build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# start server
+pnpm start
+```
 
-## Learn More
+## Features
 
-To learn more about Next.js, take a look at the following resources:
+* **Next.js 15** with server‑side rendering
+* **Tailwind CSS** for styling
+* **API** fetch from `https://api.10minuteschool.com/discovery-service/api/v1/products/ielts-course?lang=en|bn`
+* **Language switch** (EN/Bn) via cookie (`TENMS_LANG`)
+* **Responsive** from 360px up to 2200px
+* **ISR** spots where needed
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Folder Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+src/
+├─ app/           ← pages & layouts  
+├─ components/    ← reusable React components  
+└─ lib/           ← API helpers, types  
+```
 
-## Deploy on Vercel
+## Notes
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+* No backend needed — data comes from the public API.
+* Uses `next/image` for optimized images.
+* Toggle language with the little EN | Bn switch in the header.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```
+```
