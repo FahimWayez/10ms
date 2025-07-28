@@ -1,7 +1,6 @@
+## Hi ther!
 ````markdown
-# IELTS Course Frontend
-
-Simple Next.js 15 frontend for the IELTS Course page at 10 Minute School. Uses SSR, Tailwind CSS and PNPM.
+Next.js 15 frontend for the IELTS Course page at 10 Minute School. Uses SSR, Tailwind CSS and PNPM.
 
 
 ## Requirements
@@ -57,6 +56,3 @@ src/
 * No backend needed — data comes from the public API.
 * Uses `next/image` for optimized images.
 * Toggle language with the little EN | Bn switch in the header.
-
-```
-```
