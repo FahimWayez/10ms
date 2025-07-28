@@ -38,6 +38,10 @@ const en = {
     instructor: "Course instructor",
     layout: "How the course is laid out",
     learn: "What you will learn by doing the course",
+    courseDetails: "Course Details",
+    exclusiveFeatures: "Course Exclusive Feature",
+    testimonials: "Students opinion",
+    faq: "Frequently Ask Questions",
   },
   cta: {
     enroll: "Enroll",
@@ -48,6 +52,10 @@ const en = {
     call: "ফোন করুন (16910)",
   },
   pdf: { title: "Free PDF", button: "Download PDF" },
+  buttons: {
+    seeAll: "See all",
+    seeLess: "See less",
+  },
 };
 
 const bn = {
@@ -89,6 +97,10 @@ const bn = {
     instructor: "কোর্স ইন্সট্রাক্টর",
     layout: "কোর্সটি যেভাবে সাজানো হয়েছে",
     learn: "কোর্সটি করে যা শিখবেন",
+    courseDetails: "কোর্স সম্পর্কে বিস্তারিত",
+    exclusiveFeatures: "কোর্স এক্সক্লুসিভ ফিচার",
+    testimonials: "শিক্ষার্থীরা যা বলছে",
+    faq: "সচরাচর জিজ্ঞাসা",
   },
   cta: {
     enroll: "কোর্সটি কিনুন",
@@ -99,6 +111,10 @@ const bn = {
     call: "ফোন করুন (16910)",
   },
   pdf: { title: "Free PDF", button: "ফ্রি PDF Download করুন" },
+  buttons: {
+    seeAll: "সকল প্রশ্ন-উত্তর",
+    seeLess: "কম দেখুন",
+  },
 };
 
 export function getDictionary(lang: Lang) {
