@@ -1,3 +1,9 @@
+import React from "react";
+
+interface AccordionArrowProps {
+  isOpen?: boolean;
+  className?: string;
+}
 export const StarIcon = () => (
   <svg
     version="1.0"
@@ -87,3 +93,27 @@ export const CheckIcon = () => (
     </g>
   </svg>
 );
+
+export const AccordionArrow: React.FC<AccordionArrowProps> = ({
+  isOpen = false,
+  className = "",
+}) => {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      className={`h-5 w-5 text-gray-500 transition-transform ${
+        isOpen ? "rotate-180" : ""
+      } ${className}`}
+      aria-hidden="true"
+    >
+      <path
+        d="M6 9l6 6 6-6"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+};
