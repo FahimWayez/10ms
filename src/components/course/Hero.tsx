@@ -11,7 +11,15 @@ export default async function Hero({
   lang: Lang;
 }) {
   return (
-    <section className="w-full bg-gradient-to-b from-[#00001E] via-[#020024] to-[#001F55] py-4 md:py-16 md:pb-20 md:px-42">
+    <section
+      style={{
+        backgroundImage:
+          'url("https://cdn.10minuteschool.com/images/ui_%281%29_1716445506383.jpeg")',
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+      className="w-full  py-4 md:py-16 md:pb-20 md:px-42"
+    >
       <div className="px-4">
         <div className="md:hidden mb-4">
           <RightRail data={data} lang={lang} variant="media" />
