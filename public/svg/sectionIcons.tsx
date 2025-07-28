@@ -61,3 +61,29 @@ export const FreePDFIcon = () => (
     </g>
   </svg>
 );
+
+export const CheckIcon = () => (
+  <svg
+    width="18px"
+    height="18px"
+    viewBox="0 0 6.75 6.75"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g id="SVGRepo_bgCarrier" strokeWidth="0" />
+    <g
+      id="SVGRepo_tracerCarrier"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <g id="SVGRepo_iconCarrier">
+      <path
+        d="m1.125 3.548 1.384 1.374L5.625 1.829"
+        stroke="#6294f8"
+        strokeWidth="0.5625"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </g>
+  </svg>
+);
